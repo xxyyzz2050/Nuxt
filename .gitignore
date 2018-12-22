@@ -1,9 +1,10 @@
 #by sh:
+_old/
 #_notes.txt
 #options.js contains db credintals
-eldeeb/test/options.js
-db/__db/
+store/db/__db/
 tmp/
+eldeeb.config.js
 #######################################################
 
 # Created by .ignore support plugin (hsz.mobi)
