@@ -1,8 +1,19 @@
 <template>
   <div>
-    <nuxt/>
+    <script src="http://localhost:8098" />
+
+    <Nuxt />
+    <img
+src="~assets/img/cv.jpg" data-test="ok2" />
   </div>
 </template>
+<script>
+export default {
+  head: {
+    link: [{ rel: 'stylesheet', href: '/style.css' }] //nx: ~assets/style.css
+  }
+}
+</script>
 
 <style>
 html {
