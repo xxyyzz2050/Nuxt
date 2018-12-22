@@ -1,7 +1,6 @@
 #by sh:
-_old/
+#_old/ #keep it for historical versioning of eldeeb
 #_notes.txt
-#options.js contains db credintals
 store/db/__db/
 tmp/
 eldeeb.config.js
