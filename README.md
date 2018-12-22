@@ -1,10 +1,11 @@
-# testProject
+# NustJs + prismic.io
 
-> My extraordinary Nuxt.js project
+> Nuxt.js is a framework for creating Vue.js applications, you can choose between Universal, Static Generated or Single Page application.
+> prismic.io is a CMS Backend for Websites & Apps
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 
@@ -19,4 +20,4 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) & [prismic.io](https://prismic.io).
