@@ -1,10 +1,10 @@
-# testProject
+# NustJs + prismic.io Cms
 
 > My extraordinary Nuxt.js project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 
@@ -19,4 +19,4 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org) & [prismic.io](https://prismic.io).
