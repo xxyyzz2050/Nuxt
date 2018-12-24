@@ -13,13 +13,15 @@ const config = {
     srv: true,
     db: mode == 'development' ? 'test' : 'database',
     debug: mode == 'development' ? true : false,
-    models: `${this.root}/store/db/schema/{collection}.js` //absolute or related to eldeeb/lib/db-mongoDB (not to this file, or the file contains the queries)
+    get models() {
+      return `${this.root}/store/db/schema/{collection}.js`
+    } //absolute or related to eldeeb/lib/db-mongoDB (not to this file, or the file contains the queries)
+    //cannot use this or objectName inside object property i.e test={x:1, y:this.x, z:test.x, a(){return this.x}} //useing 'this' or 'test' without wrapping it inside a function is wrong; https://stackoverflow.com/questions/4616202/self-references-in-object-literals-initializers; using get keyword: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get
     //nx: model=require(models.replace('{collection}',coll))
   },
 
   github: ['xxyyzz2050@gmail.com', 'Xx159753@@', '$key']
 }
-//_id: 5be92fb487e94116ac606ffe
 
 export default config
 export const root = config.root,

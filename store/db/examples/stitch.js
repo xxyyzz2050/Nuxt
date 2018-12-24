@@ -1,9 +1,15 @@
-const {
+/* const {
   Stitch,
   RemoteMongoClient,
   AnonymousCredential
-} = require('mongodb-stitch-browser-sdk')
+} = require('mongodb-stitch-browser-sdk')*/
 
+import {
+  Stitch,
+  RemoteMongoClient,
+  AnonymousCredential
+} from 'mongodb-stitch-browser-sdk' //error: window is not defined
+/*
 const client = Stitch.initializeDefaultAppClient('stitch-test-pqmxa')
 
 const db = client
@@ -34,3 +40,4 @@ client.auth
   .catch(err => {
     console.error(err)
   })
+*/

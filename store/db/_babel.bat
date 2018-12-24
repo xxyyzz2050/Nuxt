@@ -8,6 +8,6 @@
 :: --out-dir will create the directory, but --out-file not, so put _babel/eldeeb.config.js after any directory output
  
 call npx babel . --out-dir _babel/db  --presets @babel/preset-env --plugins @babel/plugin-syntax-dynamic-import --copy-files
-call npx babel ../eldeeb.config.js --out-file _babel/eldeeb.config.js --presets @babel/preset-env --plugins @babel/plugin-syntax-dynamic-import
-call npx babel ../eldeeb --out-dir _babel/eldeeb  --presets @babel/preset-env --plugins @babel/plugin-syntax-dynamic-import --copy-files
+call npx babel ../../eldeeb.config.js --out-file _babel/eldeeb.config.js --presets @babel/preset-env --plugins @babel/plugin-syntax-dynamic-import
+call npx babel ../../eldeeb --out-dir _babel/eldeeb  --presets @babel/preset-env --plugins @babel/plugin-syntax-dynamic-import --copy-files
 

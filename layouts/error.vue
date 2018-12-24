@@ -43,7 +43,7 @@ export default {
   props: ['error'],
   head() {
     return {
-      title: this.message,
+      title: this.error.message || 'Error!',
       meta: [
         {
           name: 'viewport',

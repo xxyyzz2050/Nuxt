@@ -1,4 +1,6 @@
-# NustJs + prismic.io
+# NuxtJs + prismic.io
+
+a very fast & secure CMS for Node.Js, optimized for SEO, built with NuxtJs + prismic.io using JAMstack pattern
 
 > Nuxt.js is a framework for creating Vue.js applications, you can choose between Universal, Static Generated or Single Page application.
 >

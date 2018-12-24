@@ -3,6 +3,8 @@
 //use rowid temporary to join data, replace it with objectID
 /* ObjectID = require('mongodb').ObjectID; _id=ObjectID() */
 //nx: create shortId for each entry
+
+console.log('=====================convert=========================')
 const eldeeb = require('../../eldeeb/').default,
   ObjectID = require('mongodb').ObjectID,
   fs = require('fs'),

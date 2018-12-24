@@ -1,4 +1,4 @@
-const mongo = require('../index.js')
+import mongo from '../index.js'
 
 mongo
   .connect()

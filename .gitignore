@@ -4,6 +4,7 @@
 store/db/__db/
 tmp/
 eldeeb.config.js
+*/_babel/
 #######################################################
 
 # Created by .ignore support plugin (hsz.mobi)

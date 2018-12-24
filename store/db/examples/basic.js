@@ -1,12 +1,12 @@
-const dbx = require('../index.js'),
-  shortId = require('shortid').generate
+import mongo from '../index.js'
+import generate from 'shortid'
 
-dbx
+mongo
   .connect()
   .done((db, model) => {
     console.log('====connected=======')
 
-    let { model: articleModel, schema: articleSchema } = dbx.model(
+    let { model: articleModel, schema: articleSchema } = mongo.model(
       'articles',
       true
     )

@@ -1,9 +1,9 @@
 {
-  "name": "almogtama3.com",
+  "name": "eldeebCMS",
   "version": "1.0.0",
-  "description": "almogtama3.com",
+  "description": "a very fast & secure CMS for Node.Js, optimized for SEO, built with NuxtJs + prismic.io using JAMstack pattern",
   "author": "Dibo",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -18,7 +18,6 @@
     "bootstrap-vue": "^2.0.0-beta",
     "cross-env": "^5.2.0",
     "mongodb": "^3.1.10",
-    "mongodb-stitch-browser-sdk": "^4.1.1",
     "mongoose": "^5.4.0",
     "nuxt": "^2.0.0",
     "prismic-dom": "^2.1.0",
@@ -28,14 +27,18 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
     "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.2.3",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.10.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^5.0.0",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-vue": "^4.7.1",
+    "mongodb-stitch-browser-sdk": "^4.1.1",
     "nodemon": "^1.11.0",
     "prettier": "^1.14.3"
   }
