@@ -15,9 +15,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   /*
@@ -28,14 +26,12 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: [],
 
   /*
   ** Nuxt.js modules
@@ -97,11 +93,16 @@ module.exports = {
           'b-card-img': 'img-src',
           'b-carousel-slide': 'img-src',
           'b-embed': 'src'
-    }
+        }
 
       //nx: *:src, *:href
+      //config.target='node'
       config.node = {
-        fs: 'empty' //to solve: "import fs from 'fs'" when import or require 'fs' in any .vue file https://github.com/nuxt-community/dotenv-module/issues/11#issuecomment-376780588
+        fs: 'empty', //to solve: "import fs from 'fs'" when import or require 'fs' in any .vue file https://github.com/nuxt-community/dotenv-module/issues/11#issuecomment-376780588
+        dns: 'empty',
+        net: 'empty',
+        tls: 'empty',
+        module: 'empty' //https://mongoosejs.com/docs/browser.html
       }
     }
 
