@@ -29,10 +29,13 @@ v-if="data.article.more" class="post-more">see more..</div>
 </template>
 
 <script>
-import { root } from '../../eldeeb.config.js'
-const eldeeb = require(`${config.root}/eldeeb`) //import eldeeb from `${config.root}/eldeeb`
-const article = require(path.normalize(`${root}/store/db/article.js`)) //import article from path.normalize(`${config.root}/store/db/article.js`)
-
+import article from '~/other/db/article.js'
+import eldeeb from '~/eldeeb'
+/*
+ import { root } from '../../eldeeb.config.js';
+ import article from path.normalize(`${config.root}/other/db/article.js`) or use require()
+ const eldeeb = require(`${config.root}/eldeeb`)
+*/
 export default {
   async asyncData(app) {
     let shortId = app.req.originalUrl.match(/\/articles\/(?:.*\/)?([^\/]+)/)
@@ -59,4 +62,5 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+</style>

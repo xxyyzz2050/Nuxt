@@ -23,7 +23,7 @@ const store = new vuex.Store({
 })
 */
 import { root } from '~/eldeeb.config.js'
-import articles from '~/store/db/articles_index.js' //nx: const articles = require(path.normalize(`${root}/store/db/articles_index.js`))
+import articles from '~/other/db/articles_index.js' //nx: const articles = require(path.normalize(`${root}/store/db/articles_index.js`))
 
 export default {
   async asyncData(app) {
