@@ -1,6 +1,6 @@
 #by sh:
-#_old/ #keep it for historical versioning of eldeeb
-#_notes.txt
+*/_old/ 
+_notes.txt
 store/db/__db/
 tmp/
 eldeeb.config.js
