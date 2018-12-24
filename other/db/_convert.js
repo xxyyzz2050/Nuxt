@@ -24,7 +24,7 @@ export default eldeeb.promise((resolve, reject) => {
       fs.writeFileSync(`./__db/step${step}/${file}.json`, JSON.stringify(data))
       console.log(`write: ${file}: OK`)
     } catch (err) {
-      if (!write) throw { msg: `step ${step}: write: ${file} err`, error: err }
+      throw { msg: `step ${step}: write: ${file} err`, error: err }
     }
   }
 
