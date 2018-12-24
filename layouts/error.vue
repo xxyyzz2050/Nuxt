@@ -40,7 +40,15 @@ target="_blank" rel="noopener">
 <script>
 export default {
   name: 'NuxtError',
-  props: ['error'],
+  props: {
+    //when using eslint, type and default value are required, if the type is array or object, default must be a function  https://stackoverflow.com/a/53660944/9474643 https://vuejs.org/v2/guide/components-props.html#Prop-Types
+    error: {
+      type: Object,
+      default: function() {
+        return {}
+      }
+    }
+  },
   head() {
     return {
       title: this.error.message || 'Error!',
