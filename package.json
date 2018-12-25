@@ -20,9 +20,7 @@
     "mongodb": "^3.1.10",
     "mongoose": "^5.4.0",
     "nuxt": "^2.0.0",
-    "prismic-dom": "^2.1.0",
-    "prismic-javascript": "^2.0.1",
-    "prismic-scout": "^0.3.8",
+    "prismic-nuxt": "^0.2.0",
     "shortid": "^2.2.14",
     "vuex": "^3.0.1"
   },

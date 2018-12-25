@@ -40,7 +40,16 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    [
+      'prismic-nuxt', //https://www.npmjs.com/package/prismic-nuxt
+      {
+        endpoint: 'https://xxyyzz2050.cdn.prismic.io/api/v2',
+        linkResolver: function(doc, ctx) {
+          return '/'
+        }
+      }
+    ]
   ],
   /*
   ** Axios module configuration
@@ -98,17 +107,18 @@ module.exports = {
       //nx: *:src, *:href
       //config.target='node'
       config.node = {
-        fs: 'empty', //to solve: "import fs from 'fs'" when import or require 'fs' in any .vue file https://github.com/nuxt-community/dotenv-module/issues/11#issuecomment-376780588
-        dns: 'empty',
+        fs: 'empty' //to solve: "import fs from 'fs'" when import or require 'fs' in any .vue file https://github.com/nuxt-community/dotenv-module/issues/11#issuecomment-376780588
+        /*  dns: 'empty',
         net: 'empty',
         tls: 'empty',
-        module: 'empty' //https://mongoosejs.com/docs/browser.html
+        module: 'empty' //https://mongoosejs.com/docs/browser.html*/
       }
     }
 
     //  extractCSS: { allChunks: true } //https://github.com/nuxt/nuxt.js/issues/1533#issuecomment-419369363; replaced with: optimization.splitChunks https://webpack.js.org/configuration/optimization/#optimization-splitchunks
-  },
-  env: {
+  }
+  /*env: {
     apiPrismicUrl: process.env.API_PRISMIC_URL || 'http://localhost:3000'
   }
+  */
 }
