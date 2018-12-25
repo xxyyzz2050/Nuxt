@@ -1,6 +1,7 @@
 <template>
   <div class="__nuxt-error-page">
     <div class="error">
+      <h1>Error</h1>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="90"
