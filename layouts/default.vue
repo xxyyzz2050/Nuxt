@@ -1,16 +1,13 @@
 <template>
   <div>
-    <script src="http://localhost:8098" />
-
-    <Nuxt />
-    <img
-src="~assets/img/cv.jpg" data-test="ok2" />
+    <nuxt /><!--nuxt must be in lowerCase-->
+    <img src="~assets/img/cv.jpg" data-test="ok2" />
   </div>
 </template>
 <script>
 export default {
   head: {
-    link: [{ rel: 'stylesheet', href: '/style.css' }] //nx: ~assets/style.css
+    link: [{ rel: 'stylesheet', href: require('~/assets/style.css') }] //or href: 'static/style.css'
   }
 }
 </script>
