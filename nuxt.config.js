@@ -50,7 +50,14 @@ module.exports = {
         }
       }
     ],*/
-    ['nuxt-netlify-cms', { adminPath: 'admin' }]
+    [
+      'nuxt-netlify-cms',
+      {
+        adminPath: 'admin',
+        adminTitle: 'Content Manager',
+        cmsConfig: { media_folder: 'static/uploads' }
+      }
+    ]
   ],
   /*
   ** Axios module configuration
