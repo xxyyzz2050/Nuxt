@@ -41,15 +41,16 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
-    [
-      'prismic-nuxt', //https://www.npmjs.com/package/prismic-nuxt
+    /*[
+      'prismic-nuxt', //https://www.npmjs.com/package/prismic-nuxt, replaced with nuxt-netlify-cms
       {
         endpoint: 'https://xxyyzz2050.cdn.prismic.io/api/v2',
         linkResolver: function(doc, ctx) {
-          return '/'
+          return '/prismic'
         }
       }
-    ]
+    ],*/
+    ['nuxt-netlify-cms', { adminPath: 'admin' }]
   ],
   /*
   ** Axios module configuration
