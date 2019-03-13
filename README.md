@@ -1,3 +1,7 @@
+# deprecated
+converted from NUXT to Angular
+
+
 # NuxtJs + prismic.io
 
 a very fast & secure CMS for Node.Js, optimized for SEO, built with NuxtJs + prismic.io using JAMstack pattern
